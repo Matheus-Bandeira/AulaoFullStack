@@ -1,0 +1,10 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "Eu mesmo",
+      "email": "eu@gmail.com",
+      "foto": "https://randomuser.me/api/portraits/men/0.jpg"
+    }
+  ]
+}

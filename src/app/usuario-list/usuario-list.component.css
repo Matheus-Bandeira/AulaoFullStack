@@ -1,0 +1,28 @@
+
+.menu{
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+}
+img{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+img:hover{
+  transform: scale(1.2);
+  transition-delay: 0.5s;
+  transition-duration: 2s;
+  z-index: 2;
+  position: absolute;
+}
+.linha{
+  height: 150px;
+}
+.btn:hover{
+  transition-delay: .5s;
+  transition-duration: .5s;
+  transform: rotate(15deg);
+}

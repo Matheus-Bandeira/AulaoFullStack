@@ -1,0 +1,37 @@
+/* h1{
+    font-size: 80px;
+    padding: 50px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #4285f4;
+    color: #fff;
+    border-bottom: #ccc;
+    box-shadow: 5px 5px 5px #aaa;
+}
+.menu{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+img{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
+img:hover{
+    transform: scale(1.2);
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+    z-index: 2;
+    position: absolute;
+}
+.linha{
+    height: 150px;
+}
+.btn:hover{
+    transition-delay: .5s;
+    transition-duration: .5s;
+    transform: rotate(15deg);
+} */

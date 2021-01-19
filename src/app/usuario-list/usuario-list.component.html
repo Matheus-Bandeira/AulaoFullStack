@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-3">
+     <button type="button" mdbBtn size='lg' class="btn btn-primary"
+     routerLink="/create">
+      Novo Usuario &nbsp; <i class="fa fa-user-astronaut fa-2x"></i>
+     </button>
+    </div>
+
+
+    <div class="col-md-9">
+      <a href='#' class="list-group-item active menu">
+        Lista de usuarios
+      </a>
+      <div class="list-group" *ngFor="let u of usuarios">
+        <div class="list-group-item list-group-item-action">
+          <div class="row linha">
+            <div class="col-md-3">
+              <img [src]='u.foto'>
+            </div>
+
+            <div class="col-md-9">
+              <p>
+                <b>Nome: </b>{{u.nome}}<br>
+                <b>Email: </b>{{u.email}}
+              </p>
+              <button type="button" (click)="editar(u)" mdbBtn color="primary" mdbWavesEffect>Editar</button>
+              <button type="button" (click)="deletar(u)"  mdbBtn color="danger" mdbWavesEffect>Deletar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- MODAL -->
+<!-- <div mdbModal #modal='mdbModal' class="modal fade wow animated tada"
+tabindex="-1" role='dialog'>
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #4285f4;">
+          <button type="button" class="close pull-right"
+          (click)='modal.hide()'>
+            <span>x</span>
+          </button>
+          <h4 class="modal-title w-100 text-center text-white">
+            Cadastro de Usuario</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="md-form">
+            <mdb-icon fas icon='sort-numeric-up'
+            class="prefix text-primary"></mdb-icon>
+            <input type="number" name='id' [(ngModel)]='usuario.id'
+            mdbInput class="form-control">
+            <label>Id:</label>
+          </div>
+
+          <div class="md-form">
+            <mdb-icon fas icon='user-astronaut'
+            class="prefix text-primary"></mdb-icon>
+            <input type="text" name='nome' [(ngModel)]='usuario.nome'
+            mdbInput class="form-control">
+            <label>Nome:</label>
+          </div>
+
+          <div class="md-form">
+            <mdb-icon fas icon='envelope'
+            class="prefix text-primary"></mdb-icon>
+            <input type="text" name='email' [(ngModel)]='usuario.email'
+            mdbInput class="form-control">
+            <label>Email:</label>
+          </div>
+
+          <div class="md-form">
+            <mdb-icon fas icon='camera-retro'
+            class="prefix text-primary"></mdb-icon>
+            <input type="text" name='foto' [(ngModel)]='usuario.foto'
+            mdbInput class="form-control">
+            <label>Foto:</label>
+          </div>
+
+          <button mdbBtn gradient='blue' (click)='gravar();'>
+            Gravar</button>
+        </div>
+
+
+      </div>
+  </div>
+</div> -->
